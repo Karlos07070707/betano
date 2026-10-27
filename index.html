@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Betano — Interface demonstrativa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◖</span><span>BETANO</span></div>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <button class="menu-label">MENU <span>⌄</span></button>
+    <div class="top-actions">
+      <button class="icon-btn" title="Promoções">🎁</button>
+      <button class="icon-btn" title="Pesquisar">⌕</button>
+      <button class="icon-btn" title="Ajuda">♧</button>
+      <span class="flag">🇧🇷</span>
+      <button class="outline-btn" id="registerBtn">REGISTRAR</button>
+      <button class="login-btn" id="loginBtn">INICIAR SESSÃO</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" aria-label="Navegação principal">
+    <button title="Partidas">📋</button><button title="Torneios">🏆</button>
+    <button title="Prêmios">🌟</button><button title="Promoções">🏅</button>
+    <button title="Metas">🎯</button><button title="Cassino">♟</button>
+    <button title="Virtual">Ⅴ</button><button title="Betano">฿</button>
+    <button title="Favoritos">★</button><button title="Futebol">⚽</button>
+    <button title="Basquete">🏀</button><button title="Tênis">🎾</button>
+  </aside>
+
+  <main class="page">
+    <section class="match-grid" aria-label="Partidas em destaque">
+      <article class="match-card match-one">
+        <div class="match-content">
+          <div class="match-flags"><span class="round-label">S0</span><span class="video">▷</span></div>
+          <p class="match-time">Esta noite | 21:30</p>
+          <h2>Olimpia Asunción<br>Fluminense</h2>
+        </div>
+        <div class="odds">
+          <button data-team="Olimpia Asunción" data-odd="2.87"><span>1</span><b>2.87</b></button>
+          <button data-team="Empate" data-odd="3.40"><span>X</span><b>3.40</b></button>
+          <button data-team="Fluminense" data-odd="2.67"><span>2</span><b>2.67</b></button>
+        </div>
+      </article>
+      <article class="match-card match-two">
+        <div class="match-content">
+          <div class="match-flags"><span class="video">▷</span></div>
+          <p class="match-time">Hoje | 19:00</p>
+          <h2>Fortaleza<br>América-MG</h2>
+        </div>
+        <div class="odds">
+          <button data-team="Fortaleza" data-odd="1.62"><span>1</span><b>1.62</b></button>
+          <button data-team="Empate" data-odd="3.90"><span>X</span><b>3.90</b></button>
+          <button data-team="América-MG" data-odd="5.60"><span>2</span><b>5.60</b></button>
+        </div>
+      </article>
+      <article class="match-card match-three">
+        <div class="match-content">
+          <div class="match-flags"><span class="round-label">S0</span><span class="video">▷</span></div>
+          <p class="match-time">Hoje | 19:00</p>
+          <h2>São Paulo<br>L.D.U. Quito</h2>
+        </div>
+        <div class="odds">
+          <button data-team="São Paulo" data-odd="1.42"><span>1</span><b>1.42</b></button>
+          <button data-team="Empate" data-odd="5.00"><span>X</span><b>5.00</b></button>
+          <button data-team="L.D.U. Quito" data-odd="9.25"><span>2</span><b>9.25</b></button>
+        </div>
+      </article>
+    </section>
+
+    <div class="content-layout">
+      <div class="main-column">
+        <section class="promo-strip" aria-label="Categorias e promoções">
+          <button class="promo promo-purple"><span class="promo-icon">⚽</span><strong>São Paulo -<br>L.D.U. Quito</strong></button>
+          <button class="promo promo-violet"><span class="promo-icon">⚽</span><strong>Olimpia Asunción -<br>Fluminense</strong></button>
+          <button class="promo promo-wheel"><span class="promo-icon">✺</span><strong>Roda da<br>sorte</strong></button>
+          <button class="promo promo-dark"><span class="promo-icon">▦</span><strong>Destaque no<br>cassino</strong></button>
+          <button class="promo promo-games"><span class="promo-icon">◴</span><strong>Gameshows<br>ao vivo</strong></button>
+          <button class="promo promo-aviator"><span class="promo-icon">▤</span><strong>Aviator</strong></button>
+          <button class="promo promo-virtual"><span class="promo-icon">V</span><strong>Virtuais</strong></button>
+          <button class="promo promo-gift"><span class="promo-icon">🎁</span><strong>Ofertas<br>diárias</strong></button>
+          <button class="promo promo-odds"><span class="promo-icon">◆</span><strong>SuperOdds<br>todos os dias</strong></button>
+          <button class="promo promo-watch"><span class="promo-icon">▷</span><strong>Assista e<br>apostе</strong></button>
+          <button class="promo-next" aria-label="Próximas promoções">›</button>
+        </section>
+
+        <section class="live-panel">
+          <div class="live-heading"><h1><span>ϟ</span> Jogos ao Vivo</h1><button class="live-count">126 Jogos ao Vivo <b>→</b></button></div>
+          <nav class="sports-tabs" aria-label="Esportes">
+            <button class="active" data-sport="Futebol">⚽ <span>Futebol</span></button>
+            <button data-sport="Basquete">🏀 <span>Basquete</span></button>
+            <button data-sport="Tênis">🎾 <span>Tênis</span></button>
+            <button data-sport="Voleibol">🏐 <span>Voleibol</span></button>
+            <button data-sport="Tênis de Mesa">🏓 <span>Tênis de Mesa</span></button>
+            <button data-sport="Esports">🎮 <span>Esports</span></button>
+            <button data-sport="Beisebol">⚾ <span>Beisebol</span></button>
+            <button data-sport="Vôlei de Praia">🏐 <span>Vôlei de Praia</span></button>
+            <button data-sport="Ciclismo">🚴 <span>Ciclismo</span></button>
+          </nav>
+          <div class="league-bar"><span>⚽ Futebol</span><span>Mercados populares　☷</span></div>
+          <div class="league-title">🇦🇲 Armênia - Premier League (1)</div>
+          <div class="game-row">
+            <div class="teams"><span>FC Shirak Gyumri</span><span>FC Ararat-Armenia</span></div>
+            <div class="score"><b>0</b><b>1</b></div>
+            <div class="live-odds">
+              <button data-team="FC Shirak Gyumri" data-odd="2.10">1 <b>2.10</b></button>
+              <button data-team="Empate" data-odd="3.10">X <b>3.10</b></button>
+              <button data-team="FC Ararat-Armenia" data-odd="3.20">2 <b>3.20</b></button>
+            </div>
+          </div>
+          <div class="game-row">
+            <div class="teams"><span>Alashkert FC</span><span>Urartu FC</span></div>
+            <div class="score"><b>1</b><b>1</b></div>
+            <div class="live-odds">
+              <button data-team="Alashkert FC" data-odd="2.55">1 <b>2.55</b></button>
+              <button data-team="Empate" data-odd="2.80">X <b>2.80</b></button>
+              <button data-team="Urartu FC" data-odd="2.95">2 <b>2.95</b></button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="right-column">
+        <section class="betslip">
+          <div class="slip-tabs"><button class="selected" data-tab="coupon">CUPOM DE APOSTAS</button><button data-tab="mybets">MINHAS APOSTAS</button></div>
+          <div class="slip-body" id="slipBody"><p class="empty-slip">Sem seleções adicionadas</p></div>
+        </section>
+        <section class="mentor">
+          <div class="mentor-title"><strong>Bet Mentor</strong><span>ⓘ</span><span class="ball">⚽</span></div>
+          <div class="mentor-body">
+            <label for="stake">Escolha o valor a apostar</label>
+            <input id="stake" type="number" min="0" step="1" value="30">
+            <label>Escolha o valor que gostaria de ganhar</label>
+            <div class="prize-options"><button class="selected" data-prize="60-200">R$60 - R$200</button><button data-prize="200-600">R$200 - R$600</button></div>
+            <p class="mentor-hint">Estimativa demonstrativa, não representa uma oferta real.</p>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
